@@ -1,0 +1,123 @@
+body{
+    background-color:rgb(218, 191, 248);
+    width:100%;
+    height:auto;
+    z-index:0;
+ 
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: cursive;
+}
+.class1 {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: black; /* Начальный цвет текста */
+    border: 2px solid; /* Начальный цвет рамки */
+    border-radius: 50%;
+    padding: 10px; /* Отступы внутри ссылки */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Плавный переход */
+}
+
+.link:hover {
+    color:rgb(68, 8, 97); /* Цвет текста при наведении */
+    border-color: rgb(3, 3, 19); /* Цвет рамки при наведении */
+    background-color: rgb(186, 122, 186); /* Цвет фона при наведении (по желанию) */
+}
+.classcircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px; /* Отступы внутри контейнера */
+    background-color: rgb(239, 156, 231);
+    border-radius: 50px;
+    margine:50px;
+    
+}
+
+.classcircle p {
+    margin: 20px; /* Внешние отступы вокруг <p> */
+    font-size: 12px;
+    font-family: cursive;
+    text-align: center;
+}
+.classpic {
+    display: flex;
+    justify-content: center;
+align-items: center;
+margin-left: 715px;
+    width: 100px; /* Устанавливаем ширину контейнера */
+    height: 100px; /* Устанавливаем высоту контейнера */
+    border-radius: 50%; /* Круглая форма */
+    overflow: hidden; /* Скрытие части изображения, выходящей за пределы контейнера */
+}
+
+.classpic img {
+    width: 100%; /* Заполнение контейнера по ширине */
+    height: 100%; /* Заполнение контейнера по высоте */
+    object-fit: cover; /* Сохранение пропорций изображения при обрезке */
+}
+.classpic a{
+    display:inline;
+    width: 40px;
+    height:40px;
+    margin: 5px;
+
+}
+.horizontal-list {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding: 0;
+    display: flex; /* Выравнивание элементов в строку */
+    flex-wrap: wrap;
+}
+
+.horizontal-list li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left:75px; /* Отступ между элементами списка */
+    position: relative; /* Для абсолютного позиционирования маркера */
+}
+
+.horizontal-list li::before {
+    content: ''; /* Создаем псевдоэлемент для маркера */
+    width: 10px; /* Ширина маркера */
+    height: 10px; /* Высота маркера */
+    background-color: rgb(203, 28, 162); /* Цвет маркера */
+    border-radius: 50%; /* Делаем маркер круглым */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; /* Позиция маркера слева от текста */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+}
+
+.description {
+    text-align: center; /* Выравнивание описания по центру */
+    margin-top: 5px; /* Отступ сверху для описания */
+    max-width: 600px;
+}
+.picture img {
+    width: 150px; /* Ширина изображения */
+    height: 150px; /* Высота изображения */
+    border-radius: 50%; /* Делаем изображение круглым */
+    object-fit: cover; /* Обрезаем изображение, чтобы оно не искажалось */
+    margin-top: 10px; /* Отступ сверху от текста до изображения */
+}
+h2{
+    font-size:15px;
+    color: rgb(210, 24, 154);
+    font-style: italic;
+}
+
